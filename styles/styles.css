@@ -9,6 +9,7 @@
  }
 
  .header__up {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 19px;
