@@ -1,0 +1,73 @@
+.main {
+    max-width: 1170px;
+}
+
+.header {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .header__up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+    
+ }
+
+ .header__nav_list {
+    display: flex;
+    gap: 27px;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43; 
+ }
+
+ .header__right-block {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+ }
+
+ .header__lenguich__name::after {
+    content: url('../images/icons/down.svg');
+    margin-left: 6px;
+    
+ }
+
+ .header__lenguich_dropdown {
+    position: relative;
+ }
+
+ .header__currency_name::after {
+    content: url('../images/icons/down.svg');
+    margin-left: 6px;
+ }
+
+.header__currency_list-link {
+    text-decoration: none;
+}
+
+.header__lenguich_list {
+    display: none;
+    position: absolute;
+    top: 25px;
+    list-style-type: none;
+    border: 1px solid #e7e7e7;
+    border-radius: 1px;
+    box-shadow: 2px 2px #e7e7e7;
+}
+
+.header__currency_list {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+
+.header__lenguich_dropdown:hover .header__lenguich_list {
+    display: block;
+}

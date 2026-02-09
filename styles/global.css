@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*:root {
+  --container-width: 74.375rem;
+  --container-padding-x: 0.9375em;
+  height: 100vh;
+}*/
+
+body {
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 auto;
+  color: #637381;
+  min-height: 100vh;
+  padding: 135px;
+  background-color: #fff;
+  padding: 17px 135px 30px 135px;
+  max-width: 1440px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
