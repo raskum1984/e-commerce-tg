@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <!--<header class="header">
       <div class="header__up">
         <nav class="header__nav">
           <ul class="header__nav_list">
@@ -45,17 +45,183 @@
       </div>
         
       </div>
-      
-      <div class="header__down"></div>
+      <div class="header-main">
+        <div class="header-main_logo">
+          <a href="#" class="logo__link">
+            <img src="./images/logo.svg" class="logo__image" alt="Логотип">
+          </a>
+        </div> 
+        <div class="header-main__nav"> 
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link">
+                  Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">
+                  Shop
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link-menu nav__link-product">
+                  Products
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">
+                  Accessories
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__main-block">
+          <div class="header-main__group">
+          <div class="header__icon"></div>
+          <p class="contact__paragraph">Need Help?<br> +001 123 456 789</p>
+        </div>
+        <div class="header-main__user-actions">
+          <div class="profile-icon header__icon">
+            <img>
+          </div>
+          <div class="favorites-icon header__icon">
+            <img>
+          </div>
+          <div class="cart-icon header__icon">
+            <img>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </header>-->
+    <header class="header">
+      <div class="header__utility-nav">
+       <nav class="header__nav-utility" aria-label="Вспомогательная навигация">
+        <ul class="header__nav-utility-list">
+          <li class="header__nav-utility-item">
+            <a href="#" class="header__nav-utility-link">About Us</a>
+          </li>
+          <li class="header__nav-utility-item">
+            <a href="#" class="header__nav-utility-link">Order Tracking</a>
+          </li>
+          <li class="header__nav-utility-item">
+            <a href="#" class="header__nav-utility-link">Contact Us</a>
+          </li>
+          <li class="header__nav-utility-item">
+            <a href="#" class="header__nav-utility-link">FAQs</a>
+          </li>
+        </ul>
+       </nav>
+       <div class="header__dropdown">
+        <div class="header__language">
+          <button class="header__language-name header__language-name--nonstyle">English</button>
+          <span class="header__language-control">
+            <img src="./images/icons/down.svg" class="dropdown-arrow" alt="Стрелка вниз">
+          </span>
+        </div>
+        <div class="header__currency">
+          <button class="header__currency-name header__language-name--nonstyle">USD</button>
+          <span class="header__currency-control">
+            <img src="./images/icons/down.svg" class="dropdown-arrow" alt="Стрелка вниз">
+          </span>
+        </div>
+       </div>
+      </div>
+      <hr class="header__divider">
+      <div class="header__lower-block">
+        <div class="header_logo">
+          <img src="./images/logo.svg" class="header__logo-image">
+        </div>
+        <nav class="header__nav" aria-label="Основное меню">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Shop</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__nav-button header__language-name--nonstyle">
+                  Products
+                <span class="header__currency-control">
+                  <img src="./images/icons/down.svg" class="dropdown-arrow">
+                </span>
+              </button>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Accessories</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact-info">
+          <div class="header__utility-image">
+            <img src="./images/icons/header-phone.svg" alt="Телефон">
+          </div>
+          <p class="header__cotact-phone">Need Help?<br>
++001 123 456 789</p>
+        </div>
+        <ul class="header__user-actions">
+          <li class="header__user-actions-link">
+            <button class="header__user-actions-image header__language-name--nonstyle">
+            <img src="./images/icons/header-login.svg" alt="Человечек">
+          </button>
+          </li>
+          <li class="header__user-actions-link">
+            <button class="header__user-actions-image header__language-name--nonstyle">
+            <img src="./images/icons/header-favourites.svg" alt="Сердечко">
+          </button>
+          </li>
+          <li class="header__user-actions-link">
+            <button class="header__user-actions-image header__language-name--nonstyle">
+            <img src="./images/icons/header-basket.svg" alt="Покупательская корзина">
+          </button>
+          </li>
+        </ul>
+      </div>
+      <hr class="header__divider">
     </header>
     <main class="main">
-      <section class="intro"></section>
+      <section class="promo">
+        <div class="promo__main-item">
+          
+          
+          <h2 class="promo__header-main-item">Mega Sale Up To 50% Off For All</h2>
+          <p class="promo__text-main-item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Vestibulum ornare vestibulum mollis. Nam vitae augue purus.
+              Integer ac accumsan nunc.
+            </p>
+          <button class="promo__button-main-item">Grab The Offer</button>
+        </div>
+        <div class="promo__side-item">
+          
+          
+          <h2 class="promo__header-side-item">Summer Travel Collection</h2>
+          <button class="promo__button-side-item">Discover Now</button>
+        </div>
+        <div class="promo__additional-item">
+          
+          <h2 class="promo__header-additional-item">Get 30% Off On iPhone</h2>
+          <button class="promo__button-additional-item">Shop Now</button>
+        </div>
+      </section>
       <section class="carousel"></section>
       <section class="recent"></section>
       <section class="category"></section>
       <section class="blog"></section>
     </main>
-
-    <footer class="footer"></footer>
+<footer class="footer">
+    </footer>
   </body>
 </html>
