@@ -150,19 +150,17 @@
 */
 /* Конец блока старого header */
 
-
 /* Начало верхнего блока header */
 
 .header {
-   display: flex;
-   position: relative;
-   flex-direction: column;
-   
-   
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 143%;
-   color: var(--tailgrids-text-color);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--tailgrids-text-color);
 }
 
 .header__divider {
@@ -173,29 +171,25 @@
   background-color: #ddd;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  
 }
 
 /* Блок самого верхнего меню */
 
 .header__utility-nav {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-   max-width: 1170px;
-   margin-bottom: 18px;
-   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin-bottom: 18px;
 }
 
-
-.header__nav-utility-list{
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   gap: 27px;
-   list-style-type: none;
-   
+.header__nav-utility-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 27px;
+  list-style-type: none;
 }
 
 .header__nav-utility-link {
@@ -207,19 +201,18 @@
 /* Блок выбора языка и валюты */
 
 .header__dropdown {
-   display: flex;
-   justify-content: end;
-   align-items: center;
-   gap: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
 }
 
-.header__language-name--nonstyle {
+.button__nonstyle {
+  /* Общий стиль для сброса стилей button на странице */
   all: unset;
 }
 
 /* Конец блок выбора языка и валюты */
-
-
 
 /* Конец верхнего блока header */
 
@@ -279,7 +272,6 @@
 .header__cotact-phone {
   align-self: self-start;
   width: 122px;
-  
 }
 
 .header__utility-image {
@@ -288,8 +280,8 @@
   align-items: center;
   width: 42px;
   height: 42px;
-  background-color: #F4F7FF;
-  border: 1px solid #E7E7E7;
+  background-color: #f4f7ff;
+  border: 1px solid #e7e7e7;
   border-radius: 50%;
   gap: 12px;
 }
@@ -307,12 +299,29 @@
   align-items: center;
   width: 42px;
   height: 42px;
-  background-color: #F4F7FF;
-  border: 1px solid #E7E7E7;
+  background-color: #f4f7ff;
+  border: 1px solid #e7e7e7;
   border-radius: 50%;
-  
 }
 
+.header__user-actions-link {
+  position: relative;
+}
+
+.header__user-actions-link::after {
+  position: absolute;
+  content: "1";
+  right: -2px;
+  top: -3px;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  background-color: #3056D3;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--white);
+}
 
 /* Конец блока контактов и меню пользователя */
 
@@ -322,20 +331,68 @@
 
 .promo {
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
   gap: 30px;
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);*/
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .promo__main-item {
-  position: relative;
+  /*position: relative;
   grid-column: 1/3;
-  grid-row: 1/3;
+  grid-row: 1/3;*/
   background-image: url(../images/background-intro-chair.png);
   background-size: cover;
   background-position: center;
   height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+  padding: 105px 15px 105px 65px;
+  min-width: 370px;
+  flex-grow: 1;
+}
+
+.promo__group {
+  display: flex;
+  flex-direction: column;
+  min-width: 370px;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+}
+
+.promo__header-main-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+  color: var(--tailgrids-black-color);
+  flex-grow: 1;
+  min-width: 100;
+}
+
+.promo__text-main-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--tailgrids-text-color);
+  max-width: 405px;
+}
+
+.promo__button-main-item {
+  padding: 12px 30px;
+  background-color: #3056D3;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white);
+  border-radius: 4px;
 }
 
 .promo__side-item {
@@ -348,22 +405,209 @@
   height: 225px;
 }
 
+.promo__header-side-item {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: right;
+  color: var(--tailgrids-black-color);
+}
+
+.promo__title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
 .promo__additional-item {
-  position: relative;
+  /*position: relative;
   grid-column: 3/4;
-  grid-row: 2/3;
+  grid-row: 2/3;*/
   background-image: url(../images/background-intro-phone.png);
   background-size: cover;
   background-position: center;
   height: 225px;
 }
 
+.promo__header-additional-item {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: right;
+  color: var(--tailgrids-black-color);
+}
+
 .promo__image {
   position: absolute;
-   top: 0;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
+.prono__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 12px;
+  padding: 0 35px 35px 0;
+}
+
+.line__break {
+  display: block;
+}
+
+.promo__header-side-item {
+  text-align: right;
+}
+
+.promo__additional-item {
+  text-align: right;
+}
+
 /* конец блока promo */
+
+/* Начало блока carousel */
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 74px;
+  padding: 120px 0 30px;
+}
+
+.carousel__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 113%;
+  text-align: center;
+  color: var(--tailgrids-black-color);
+}
+
+.carousel__title_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--tailgrids-text-color);
+}
+
+.corousel__image {
+  display: block;
+  width: 270px;
+  height: 250px;
+
+}
+
+.corousel__divider {
+  width: 100px;
+  height: 4px;
+  background-color: #3056D3;
+}
+
+.carousel__header {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel__title_text {
+  text-align: center;
+}
+
+.carousel__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.carousel__list_item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px #E7E7E7;
+}
+
+.carousel__product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 5px 30px;
+  gap: 15px;
+}
+
+.carousel__title-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  row-gap: 5px;
+}
+
+.carousel__product-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--tailgrids-black-color);
+  text-align: center;
+}
+
+.carousel__product-price {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--tailgrids-black-color);
+}
+
+.carousel__stars-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+
+.corousel__button {
+  padding: 10px 30px;
+  background-color: #3056D3;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.stars {
+  width: 120px;
+  height: 20px;
+  border: 1px solid #f5de12;
+}
+
+.carousel__button_block {
+  display: flex;
+  gap: 15px;
+}
+
+.carousel__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #637381;
+  border-radius: 50%;
+}
+
+.carousel__button--right {
+  transform: rotate(180deg);
+}
+
+.carousel__button:hover {
+  background-color: #3056D3;
+
+}

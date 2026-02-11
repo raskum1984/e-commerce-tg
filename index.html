@@ -104,41 +104,51 @@
     </header>-->
     <header class="header">
       <div class="header__utility-nav">
-       <nav class="header__nav-utility" aria-label="Вспомогательная навигация">
-        <ul class="header__nav-utility-list">
-          <li class="header__nav-utility-item">
-            <a href="#" class="header__nav-utility-link">About Us</a>
-          </li>
-          <li class="header__nav-utility-item">
-            <a href="#" class="header__nav-utility-link">Order Tracking</a>
-          </li>
-          <li class="header__nav-utility-item">
-            <a href="#" class="header__nav-utility-link">Contact Us</a>
-          </li>
-          <li class="header__nav-utility-item">
-            <a href="#" class="header__nav-utility-link">FAQs</a>
-          </li>
-        </ul>
-       </nav>
-       <div class="header__dropdown">
-        <div class="header__language">
-          <button class="header__language-name header__language-name--nonstyle">English</button>
-          <span class="header__language-control">
-            <img src="./images/icons/down.svg" class="dropdown-arrow" alt="Стрелка вниз">
-          </span>
+        <nav class="header__nav-utility" aria-label="Вспомогательная навигация">
+          <ul class="header__nav-utility-list">
+            <li class="header__nav-utility-item">
+              <a href="#" class="header__nav-utility-link">About Us</a>
+            </li>
+            <li class="header__nav-utility-item">
+              <a href="#" class="header__nav-utility-link">Order Tracking</a>
+            </li>
+            <li class="header__nav-utility-item">
+              <a href="#" class="header__nav-utility-link">Contact Us</a>
+            </li>
+            <li class="header__nav-utility-item">
+              <a href="#" class="header__nav-utility-link">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__dropdown">
+          <div class="header__language">
+            <button class="header__language-name button__nonstyle">
+              English
+            </button>
+            <span class="header__language-control">
+              <img
+                src="./images/icons/down.svg"
+                class="dropdown-arrow"
+                alt="Стрелка вниз"
+              />
+            </span>
+          </div>
+          <div class="header__currency">
+            <button class="header__currency-name button__nonstyle">USD</button>
+            <span class="header__currency-control">
+              <img
+                src="./images/icons/down.svg"
+                class="dropdown-arrow"
+                alt="Стрелка вниз"
+              />
+            </span>
+          </div>
         </div>
-        <div class="header__currency">
-          <button class="header__currency-name header__language-name--nonstyle">USD</button>
-          <span class="header__currency-control">
-            <img src="./images/icons/down.svg" class="dropdown-arrow" alt="Стрелка вниз">
-          </span>
-        </div>
-       </div>
       </div>
-      <hr class="header__divider">
+      <hr class="header__divider" />
       <div class="header__lower-block">
         <div class="header_logo">
-          <img src="./images/logo.svg" class="header__logo-image">
+          <img src="./images/logo.svg" class="header__logo-image" />
         </div>
         <nav class="header__nav" aria-label="Основное меню">
           <ul class="header__nav-list">
@@ -149,10 +159,10 @@
               <a href="#" class="header__nav-link">Shop</a>
             </li>
             <li class="header__nav-item">
-              <button class="header__nav-button header__language-name--nonstyle">
-                  Products
+              <button class="header__nav-button button__nonstyle">
+                Products
                 <span class="header__currency-control">
-                  <img src="./images/icons/down.svg" class="dropdown-arrow">
+                  <img src="./images/icons/down.svg" class="dropdown-arrow" />
                 </span>
               </button>
             </li>
@@ -166,62 +176,153 @@
         </nav>
         <div class="header__contact-info">
           <div class="header__utility-image">
-            <img src="./images/icons/header-phone.svg" alt="Телефон">
+            <img src="./images/icons/header-phone.svg" alt="Телефон" />
           </div>
-          <p class="header__cotact-phone">Need Help?<br>
-+001 123 456 789</p>
+          <p class="header__cotact-phone">
+            Need Help?<br />
+            +001 123 456 789
+          </p>
         </div>
         <ul class="header__user-actions">
-          <li class="header__user-actions-link">
-            <button class="header__user-actions-image header__language-name--nonstyle">
-            <img src="./images/icons/header-login.svg" alt="Человечек">
-          </button>
+          <li>
+            <button class="header__user-actions-image button__nonstyle">
+              <img src="./images/icons/header-login.svg" alt="Человечек" />
+            </button>
           </li>
           <li class="header__user-actions-link">
-            <button class="header__user-actions-image header__language-name--nonstyle">
-            <img src="./images/icons/header-favourites.svg" alt="Сердечко">
-          </button>
+            <button class="header__user-actions-image button__nonstyle">
+              <img src="./images/icons/header-favourites.svg" alt="Сердечко" />
+            </button>
           </li>
           <li class="header__user-actions-link">
-            <button class="header__user-actions-image header__language-name--nonstyle">
-            <img src="./images/icons/header-basket.svg" alt="Покупательская корзина">
-          </button>
+            <button class="header__user-actions-image button__nonstyle">
+              <img
+                src="./images/icons/header-basket.svg"
+                alt="Покупательская корзина"
+              />
+            </button>
           </li>
         </ul>
       </div>
-      <hr class="header__divider">
+      <hr class="header__divider" />
     </header>
     <main class="main">
       <section class="promo">
         <div class="promo__main-item">
-          
-          
-          <h2 class="promo__header-main-item">Mega Sale Up To 50% Off For All</h2>
-          <p class="promo__text-main-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Vestibulum ornare vestibulum mollis. Nam vitae augue purus.
+          <div class="promo__title">
+            <h2 class="promo__header-main-item">
+              Mega Sale Up To 50% <span class="line__break">Off For All</span>
+            </h2>
+            <p class="promo__text-main-item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum ornare vestibulum mollis. Nam vitae augue purus.
               Integer ac accumsan nunc.
             </p>
-          <button class="promo__button-main-item">Grab The Offer</button>
+          </div>
+
+          <button class="promo__button-main-item button__nonstyle">
+            Grab The Offer
+          </button>
         </div>
-        <div class="promo__side-item">
-          
-          
-          <h2 class="promo__header-side-item">Summer Travel Collection</h2>
-          <button class="promo__button-side-item">Discover Now</button>
-        </div>
-        <div class="promo__additional-item">
-          
-          <h2 class="promo__header-additional-item">Get 30% Off On iPhone</h2>
-          <button class="promo__button-additional-item">Shop Now</button>
+        <div class="promo__group">
+          <div class="promo__side-item prono__item">
+            <h2 class="promo__header-side-item">
+              Summer Travel <span class="line__break">Collection</span>
+            </h2>
+            <button class="promo__button-side-item button__nonstyle">
+              Discover Now
+            </button>
+          </div>
+          <div class="promo__additional-item prono__item">
+            <h2 class="promo__header-additional-item">
+              Get 30% Off <span class="line__break">On iPhone</span>
+            </h2>
+            <button class="promo__button-additional-item button__nonstyle">
+              Shop Now
+            </button>
+          </div>
         </div>
       </section>
-      <section class="carousel"></section>
+      <section class="carousel">
+        <div class="carousel__header">
+          <h2 class="carousel__title">Recent Arrivals</h2>
+        <hr class="corousel__divider" >
+        <p class="carousel__title_text">There are many variations of passages of Lorem Ipsum available
+<span class="line__break">but the majority have suffered alteration in some form.</span></p>
+      </div>
+        <div class="carousel__product">
+          <ul class="carousel__list">
+            <li class="carousel__list_item">
+              <img class="corousel__image" src="./images/product-carousel/bag.png">
+              <div class="carousel__product-info">
+                <div class="carousel__title-price">
+                  <h3 class="carousel__product-title" >Stylish Women Bag</h3>
+                <p class="carousel__product-price">146.00</p>
+                </div>
+                <div class="carousel__stars-button">
+                  <div class="stars">
+                </div>
+                <button class="corousel__button button__nonstyle">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__list_item">
+              <img class="corousel__image" src="./images/product-carousel/watch.png">
+              <div class="carousel__product-info">
+                <div class="carousel__title-price">
+                  <h3 class="carousel__product-title" >Stylish Watch For Man</h3>
+                <p class="carousel__product-price">75.00</p>
+                </div>
+                <div class="carousel__stars-button">
+                  <div class="stars">
+                </div>
+                <button class="corousel__button button__nonstyle">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__list_item">
+              <img class="corousel__image" src="./images/product-carousel/polo.png">
+              <div class="carousel__product-info">
+                <div class="carousel__title-price">
+                  <h3 class="carousel__product-title" >Polo T-shirt For Man</h3>
+                <p class="carousel__product-price">25.00</p>
+                </div>
+                <div class="carousel__stars-button">
+                  <div class="stars">
+                </div>
+                <button class="corousel__button button__nonstyle">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__list_item">
+              <img class="corousel__image" src="./images/product-carousel/wallet.png">
+              <div class="carousel__product-info">
+                <div class="carousel__title-price">
+                  <h3 class="carousel__product-title" >Luxury Wallet For Male</h3>
+                <p class="carousel__product-price">95.00</p>
+                </div>
+                <div class="carousel__stars-button">
+                  <div class="stars">
+                </div>
+                <button class="corousel__button button__nonstyle">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel__button_block">
+          <button class="carousel__button">
+            <img  src="./images/icons/left.svg" alt="Стрелка влево"  class="carousel__button--left">
+          </button>
+          <button class="carousel__button">
+            <img src="./images/icons/left.svg" alt="Стрелка вправо" class="carousel__button--right">
+          </button>
+        </div>
+      </section>
       <section class="recent"></section>
       <section class="category"></section>
       <section class="blog"></section>
     </main>
-<footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>
